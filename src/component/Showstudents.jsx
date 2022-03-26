@@ -21,7 +21,7 @@ const Showstudents = () => {
 
   const viewStudent = async(e,id)=>{
     e.preventDefault();
-    const students =  await axios.get('http://127.0.0.1:8000/api/view-student/'+id);
+    const students =  await axios.get('https://api.ak-webservices.com/api/view-student/'+id);
     if(students.data.status===101){
         navigate("/");
     } 
