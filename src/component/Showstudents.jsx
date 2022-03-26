@@ -11,11 +11,11 @@ const Showstudents = () => {
 //loading studnet data
 
   const  loadStudents=async ()=>{
-  const students =  await axios.get('http://127.0.0.1:8000/api/get');
+  const students =  await axios.get('https://api.ak-webservices.com/api/get');
     // console.log(data.data)
     if(students.data.status===200){
-      setStudents(students.data.data.reverse())
-      // console.log(student)
+      setStudents(students.data.message)
+      console.log(student)
     } 
   }
 
